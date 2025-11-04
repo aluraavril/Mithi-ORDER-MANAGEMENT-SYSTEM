@@ -1,0 +1,245 @@
+:root {
+    --primary: #217B71;
+    --accent: #8ACBA9;
+    --light: #F0FFE3;
+    --dark: #1a5f57;
+}
+
+body {
+    font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: var(--light);
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark);
+    border-color: var(--dark);
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+/* accent*/
+.bg-accent {
+    background-color: var(--accent) !important;
+}
+
+/* cards */
+.card {
+    border: 1px solid #e5e7eb;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.card-header {
+    border-radius: 1rem 1rem 0 0 !important;
+    background-color: var(--accent);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 1rem 1.5rem;
+}
+
+/* buttons */
+.btn {
+    border-radius: 0.5rem;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.2s;
+}
+
+.btn-lg {
+    border-radius: 2rem;
+    padding: 0.75rem 2rem;
+}
+
+/* forms */
+.form-control, .form-select {
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+    padding: 0.625rem 1rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(33, 123, 113, 0.25);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+/* navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-pills {
+    background-color: white;
+    border-bottom: 2px solid #e5e7eb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 0.75rem 0;
+}
+
+.nav-pills .nav-link {
+    color: #6b7280;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.25rem;
+    margin: 0 0.25rem;
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.nav-pills .nav-link:hover {
+    color: var(--primary);
+}
+
+.navbar-custom {
+    background-color: var(--primary);
+}
+.nav-link-custom {
+    color: #6b7280;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.nav-link-custom:hover {
+    color: var(--primary);
+}
+.nav-link-custom.active {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* tables */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: #374151;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 0.75rem 1rem;
+}
+
+.table tbody tr {
+    transition: background-color 0.2s;
+}
+
+.table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.table tbody td {
+    padding: 0.75rem 1rem;
+    vertical-align: middle;
+}
+
+/* badges */
+.badge {
+    padding: 0.5em 1em;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 2rem;
+}
+
+.module-card {
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.module-card:hover {
+    transform: scale(1.02);
+}
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.auth-card {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* footer */
+footer {
+    background-color: var(--primary);
+    color: white;
+    padding: 1.5rem 0;
+    margin-top: auto;
+}
+
+/* modal */
+.modal-content {
+    border-radius: 1rem;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 1.25rem 1.5rem;
+}
+
+.modal-title {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.modal-footer {
+    border-top: 1px solid #e5e7eb;
+    padding: 1rem 1.5rem;
+}
+
+/* responsive adjustment */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    
+    .nav-pills {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .nav-pills .nav-link {
+        display: inline-block;
+    }
+}
